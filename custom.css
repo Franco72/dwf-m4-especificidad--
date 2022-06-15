@@ -1,0 +1,32 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h2,p{
+    margin: 10px;
+}
+body div.contenedor {
+    max-width: 960px;
+    background-color: #E5E5E5;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 70px;
+    /* en situaciones normales los h2 y p y estas etiquetas tienen un margen preestablecido que empuja hasta el body de su lugar */
+    /* overflow: auto; otra forma de que los h2 y p no se salgan de la caja es esta propiedad, que le dice al padre que maneje los elementos que se salgan de su caja automáticamente y esto hace que los márgenes queden dentro del contenedor */
+}
+
+html body div.contenedor h2.titulo { 
+    /* otra forma sería poniendo esto: html body div.contenedor h2.titulo.titulo */
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+  }
+
+.contenedor p.texto {
+    font-size: 20px;
+    color: #000;
+    max-width: 527px;
+  }
